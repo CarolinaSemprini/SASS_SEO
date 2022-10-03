@@ -1,0 +1,23 @@
+//primero van los import de variables
+@import "./partials/variables";
+//segundo lugar para los import de reset
+@import "./partials/reset";
+//tercer lugar para los partials de paginas
+@import "./partials/pag_inicio";
+@import "./partials/pag_ciudad";
+@import "./partials/pag_gobierno";
+@import "./partials/pag_digesto";
+@import "./partials/pag_atencion_ciudadana";
+@import "./partials/pag_contacto";
+@import "./partials/footer";
+@import "./partials/pag_lic_conducir";
+@import "./partials/pag_arbolado";
+@import "./partials/pag_hab_remis";
+//media query
+@import "./partials/media";
+@import "./partials/media_ciudad";
+@import "./partials/media_gobierno";
+@import "./partials/media_digesto";
+@import "./partials/media_atencion";
+@import "./partials/media_contacto";
+@import "./partials/queri_ondas_contacto";

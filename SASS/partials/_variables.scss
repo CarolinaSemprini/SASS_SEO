@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Poppins:wght@300;400;600;700&display=swap");
+$fuente_body: "Poppins", sans-serif;
+$color_hover: #03e9f4;
+$color_select: linear-gradient(0deg, transparent, #03e9f4);
+$color_nav: #fff;
+$color_formulario: linear-gradient(#141e30, #243b55);
+$color_hero_fondo: radial-gradient(
+  circle 590px at 11.2% 14.8%,
+  rgba(18, 35, 60, 1) 0%,
+  rgba(58, 56, 56, 0.816) 90%
+);
+
+//mixins
+
+@mixin nav($alto: 100%, $display: flex, $align: center) {
+  height: $alto;
+  display: $display;
+  align-items: $align;
+}
+
+@mixin nav_link {
+  margin-left: 280px;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 2em;
+}
+
+@mixin hover($color_hover, $color_nav, $border) {
+  background: $color_hover;
+  color: $color_nav;
+  border-radius: $border;
+  box-shadow: 0 0 5px $color_hover, 0 0 25px $color_hover, 0 0 50px $color_hover,
+    0 0 100px $color_hover;
+}
+
+@mixin link_select($color_select) {
+  background: $color_select;
+}
+
+@mixin titulo_portada($marg_top, $font_size: 2rem, $color: rgb(248, 248, 248)) {
+  margin-top: $marg_top;
+  font-size: $font_size;
+  color: $color;
+  text-decoration: solid;
+  text-align: left;
+}
+
+//extend
+.hero_gobierno {
+  width: 100%;
+  height: 50vh;
+  min-height: 200px;
+  max-height: 300px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: rgb(255, 255, 255);
+  background-image: $color_hero_fondo;
+  background-size: contain;
+}
+
+.nav_links {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.botones_formulario {
+  display: block;
+  background: $color_select;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  color: #fff;
+  width: 99%;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+//maps
+$paleta: (
+  "color_hero_fondo":
+    radial-gradient(
+      circle 590px at 8.2% 13.8%,
+      rgba(18, 35, 60, 1) 0%,
+      rgba(58, 56, 56, 0.816)
+    ),
+  "color_formulario": linear-gradient(#141e30, #243b55),
+);

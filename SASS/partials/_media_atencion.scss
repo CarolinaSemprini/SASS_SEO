@@ -1,0 +1,357 @@
+@media only screen and (max-width: 1024px) {
+  .hero_atencion {
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 480px;
+    max-height: 580px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    color: rgb(255, 255, 255);
+    .nav {
+      height: 100%;
+      align-items: center;
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .nav_link {
+        margin: auto;
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        gap: 2em;
+      }
+
+      .nav_link--menu {
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.7s opacity;
+      }
+
+      .nav_link--show {
+        --show: block;
+        opacity: 1;
+        pointer-events: unset;
+      }
+      .nav_items {
+        list-style: none;
+
+        .nav_links {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+
+          .menu_link--select {
+            @include link_select($color_select);
+          }
+        }
+
+        .nav_links:hover {
+          @include hover($color_hover, $color_nav, 5px);
+        }
+      }
+      .nav_close {
+        display: var(--show, none);
+      }
+
+      .nav_menu {
+        display: block;
+        color: #fff;
+
+        .nav_img {
+          display: block;
+          width: 30px;
+        }
+      }
+    }
+  }
+  .tarjetas {
+    background: $color_formulario;
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    .animate__flash {
+      text-align: left;
+    }
+
+    .animate__animated {
+      text-align: left;
+      color: #fff;
+    }
+    .col {
+      width: 25%;
+
+      .card-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        padding-left: 25%;
+      }
+      .card-body {
+        text-align: center;
+
+        .card-title {
+          text-align: center;
+          padding-left: 0%;
+        }
+
+        .btn {
+          margin-left: 0px;
+        }
+
+        .card-text {
+          text-align: center;
+          padding-left: 0%;
+        }
+      }
+    }
+  }
+
+  .footer_container {
+    width: 100%;
+    flex-wrap: wrap;
+
+    .nav--footer {
+      width: 80%;
+      justify-items: left;
+
+      .nav_link--footer {
+        width: 100%;
+        justify-content: center;
+
+        .nav_items {
+          align-self: left;
+
+          .nav_links {
+            list-style: none;
+            text-decoration: none;
+            color: #fff;
+          }
+
+          .nav_links:hover {
+            @include hover($color_hover, $color_nav, 5px);
+          }
+        }
+      }
+    }
+
+    .footer_title {
+      justify-self: start;
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+  }
+
+  .footer_form {
+    width: 50%;
+    justify-content: space-evenly;
+
+    .footer_newsletter {
+      font-size: 1.1em;
+    }
+
+    .footer_input {
+      flex-basis: 100%;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    .footer_submit {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero_atencion {
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 280px;
+    max-height: 580px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    color: rgb(255, 255, 255);
+    .nav_menu {
+      display: block;
+      color: #fff;
+
+      .nav_img {
+        display: block;
+        width: 30px;
+        margin-right: 85px;
+        margin-top: 25px;
+      }
+    }
+
+    .nav_link--menu {
+      position: fixed;
+      background-color: #000;
+      top: 0;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.7s opacity;
+    }
+
+    .nav_link--show {
+      --show: block;
+      opacity: 1;
+      pointer-events: unset;
+    }
+
+    .menu_link--select {
+      @include link_select($color_select);
+    }
+
+    .nav_links:hover {
+      @include hover($color_hover, $color_nav, 5px);
+    }
+
+    .nav_close {
+      display: var(--show, none);
+    }
+  }
+  .tarjetas {
+    width: 100%;
+    background: $color_formulario;
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    .animate__flash {
+      text-align: left;
+    }
+
+    .animate__animated {
+      text-align: left;
+      color: #fff;
+    }
+    .col {
+      width: 70%;
+      margin-left: 10px;
+
+      .card-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+      }
+      .card-body {
+        text-align: center;
+
+        .card-title {
+          text-align: center;
+          padding-left: 0%;
+        }
+
+        .btn {
+          margin-left: 0px;
+        }
+
+        .card-text {
+          text-align: center;
+          padding-left: 0%;
+        }
+      }
+    }
+  }
+
+  .accordion-button {
+    background-image: linear-gradient(60deg, #8a8b8d 0%, #485563 100%);
+  }
+  .accordion-button {
+    color: #fff;
+  }
+}
+
+.footer_container {
+  width: 100%;
+
+  .nav--footer {
+    margin: auto;
+    padding-bottom: 50px;
+    display: flex;
+
+    .nav_link--footer {
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .nav_items {
+        align-items: center;
+
+        margin-right: 10px;
+
+        .nav_links {
+          list-style: none;
+          text-decoration: none;
+          color: #fff;
+        }
+
+        .nav_links:hover {
+          @include hover($color_hover, $color_nav, 5px);
+        }
+      }
+    }
+  }
+}
+
+.footer_title {
+  justify-self: center;
+  margin-bottom: 15px;
+  font-size: 5px;
+  margin-right: 0px;
+}
+
+.footer_form {
+  width: 100%;
+  justify-content: space-evenly;
+
+  .footer_newsletter {
+    font-size: 1.1em;
+  }
+
+  .footer_input {
+    width: 20%;
+    flex-basis: 50%;
+    margin-left: 20px;
+
+    margin-bottom: 16px;
+  }
+  .footer_submit {
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

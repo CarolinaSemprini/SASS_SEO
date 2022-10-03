@@ -1,0 +1,11 @@
+En los archivos HTML  sumé el SEO con las siguientes características:
+Título: Municipalidad de Corinto
+Descripción: Sitio oficial del Gobierno de la Ciudad de Corinto, Argentina
+Meta palabras claves: Municipalidad, Corinto, digesto, ciudadania, Ordenanzas, trámites
+OPEN GRAPH/ FACEBOOK. Se agregaron las meta property su type, url, titulo, descripción 
+Además todas las pestañas de cada página, tienen un titulo y descripción:
+"MUNICIPIO|INICIO"
+"MUNICIPIO | HISTORIA"
+"MUNICIPIO| GOBIERNO"
+
+

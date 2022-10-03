@@ -1,0 +1,104 @@
+.hero_gobierno {
+  @extend .hero_gobierno;
+
+  .nav {
+    height: 100%;
+    align-items: center;
+    .nav_link {
+      margin: auto;
+      padding: 0;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+      gap: 2em;
+
+      .menu_link--select {
+        @include link_select($color_select);
+      }
+
+      .nav_items {
+        list-style: none;
+
+        .nav_links {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+        }
+        .nav_links:hover {
+          @include hover($color_hover, $color_nav, 5px);
+        }
+      }
+    }
+    .nav_menu {
+      margin-left: auto;
+      cursor: pointer;
+      display: none;
+      color: #fff;
+
+      .nav_img {
+        display: block;
+        width: 30px;
+      }
+    }
+    .nav_close {
+      display: var(--show, none);
+    }
+
+    #ctn-icon-search {
+      position: absolute;
+      right: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 30px;
+    }
+
+    #ctn-icon-search {
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 300ms;
+    }
+
+    #ctn-icon-search img:hover {
+      @include hover($color_hover, $color_nav, 5px);
+    }
+  }
+  .animate__animated.animate__lightSpeedInRight {
+    --animate-duration: 2s;
+
+    .hero_title {
+      @include titulo_portada($marg_top: 0px);
+    }
+    .hero_paragraph {
+      @include titulo_portada($marg_top: 0px);
+    }
+  }
+}
+
+.stiker img {
+  margin: 110px;
+  height: 180px;
+}
+
+.gobierno {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .card {
+    width: 350px;
+    height: 450px;
+
+    .card-img-top {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin: 0px auto;
+      clip-path: circle();
+      transition: all 3s ease;
+    }
+    .card-img-top:hover {
+      transform: rotateY(-360deg);
+    }
+  }
+}
