@@ -1,17 +1,15 @@
 @media only screen and (max-width: 1024px) {
-  .hero_digesto {
+  .hero_contacto {
     max-width: 100%;
     overflow-x: hidden;
     width: 100%;
-    height: 50vh;
-    min-height: 200px;
-    max-height: 300px;
+    min-height: 480px;
+    max-height: 580px;
     position: relative;
     display: grid;
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 1fr;
     color: rgb(255, 255, 255);
-    background-image: $color_hero_fondo;
-    background-size: contain;
+
     .nav {
       height: 100%;
       align-items: center;
@@ -54,7 +52,6 @@
         opacity: 1;
         pointer-events: unset;
       }
-
       .nav_items {
         list-style: none;
 
@@ -78,13 +75,39 @@
       .nav_menu {
         display: block;
         color: #fff;
-        margin-bottom: 17%;
 
         .nav_img {
           display: block;
           width: 30px;
         }
       }
+    }
+  }
+  .inner-header {
+    height: 1vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .hero_contacto_container {
+    max-width: 80;
+    display: grid;
+    grid-auto-rows: min-content;
+    align-content: center;
+    gap: 1em;
+
+    .hero_contacto_titulo {
+      font-size: 1.5rem;
+      color: rgb(255, 255, 255);
+      text-decoration: solid;
+      text-align: left;
+    }
+
+    .hero_contacto_parrafo {
+      color: rgb(255, 255, 255);
+      text-decoration: solid;
+      font-size: 1.5rem;
+      text-align: left;
     }
   }
   .Formulario {
@@ -224,19 +247,17 @@
     }
   }
 }
-
 @media only screen and (max-width: 500px) {
-  .hero_digesto {
+  .hero_contacto {
+    max-width: 100%;
+    overflow-x: hidden;
     width: 100%;
-    height: 50vh;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 180px;
+    max-height: 280px;
     position: relative;
     display: grid;
     grid-template-rows: 1fr;
     color: rgb(255, 255, 255);
-    background-image: $color_hero_fondo;
-    background-size: contain;
 
     .nav_menu {
       display: block;
@@ -285,65 +306,11 @@
     }
   }
 
-  .hero_contacto_title {
-    margin-bottom: 50%;
-    font-size: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: solid;
-    text-align: left;
-  }
-  .hero_contacto_paragraph {
-    color: rgb(255, 255, 255);
-    text-decoration: solid;
-    font-size: 20px;
-    text-align: left;
-  }
-  .inner-header {
-    height: 40vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    .flex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-  }
-  .waves {
-    position: relative;
-    width: 100%;
-    height: 15vh;
-
-    min-height: 100px;
-    max-height: 150px;
-
-    .parallax > use {
-      animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-    }
-    .parallax > use:nth-child(1) {
-      animation-delay: -2s;
-      animation-duration: 7s;
-    }
-    .parallax > use:nth-child(2) {
-      animation-delay: -3s;
-      animation-duration: 10s;
-    }
-    .parallax > use:nth-child(3) {
-      animation-delay: -4s;
-      animation-duration: 13s;
-    }
-    .parallax > use:nth-child(4) {
-      animation-delay: -5s;
-      animation-duration: 20s;
-    }
-  }
   .Formulario {
     margin-right: 65%;
   }
-  .form-contacto-register {
-    width: 95vw;
+  .form-register {
+    width: 85vw;
     margin-left: 10%;
     margin-right: 5%;
     padding-left: 10px;
@@ -358,7 +325,7 @@
 
     .form--title {
       margin-top: 0;
-      font-size: 1.1em;
+      font-size: 10px;
       text-align: center;
       color: #fff;
     }

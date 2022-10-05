@@ -19,7 +19,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 15px;
 
     .container {
       width: 90%;
@@ -104,7 +104,7 @@
     gap: 1em;
 
     .hero_title {
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: rgb(255, 255, 255);
       text-decoration: solid;
       text-align: left;
@@ -113,7 +113,7 @@
     .hero_paragraph {
       color: rgb(255, 255, 255);
       text-decoration: solid;
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: left;
     }
   }
