@@ -67,7 +67,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, hsla(55deg, 43%, 50%, 0.144), hsla(138deg, 47%, 44%, 0.166)), url("../imagen/high-angle-shot-of-beautiful-cityscape-at-sunset-in-new-york-city-usa.jpg");
+  background: linear-gradient(to right, hsla(55deg, 43%, 50%, 0.144), hsla(138deg, 47%, 44%, 0.166)), url("../imagen/inicio.jpg");
   background-size: cover;
   z-index: -1;
 }
@@ -378,7 +378,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5490196078) 0%, rgba(0, 0, 0, 0.5490196078) 100%), url("../imagen/aerial-drone-wide-view-of-brasov-at-night-romania-old-city-centre-nightlights-buildings-roads.jpg");
+  background: linear-gradient(to right, hsla(55deg, 43%, 50%, 0.144), hsla(138deg, 47%, 44%, 0.166)), url("../imagen/ciudad.png");
   background-size: cover;
   z-index: -1;
 }
