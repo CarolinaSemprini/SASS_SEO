@@ -632,7 +632,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 45px;
 }
 .hero_digesto .nav .container {
   width: 90%;
@@ -683,7 +683,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 30px;
 }
 .hero_digesto .nav #ctn-icon-search {
   font-size: 18px;
@@ -699,20 +698,15 @@ body {
 .hero_digesto .hero_digesto_container {
   max-width: 80;
   display: grid;
-  grid-auto-rows: max-content;
+  grid-auto-rows: min-content;
   align-content: center;
   gap: 1em;
-  padding-bottom: 290px;
-}
-.hero_digesto .hero_digesto_container .animate__animated.animate__lightSpeedInRight {
-  --animate-duration: 2s;
 }
 .hero_digesto .hero_digesto_container .hero_title {
   font-size: 2rem;
   color: rgb(255, 255, 255);
   text-decoration: solid;
   text-align: left;
-  margin-top: 80px;
 }
 .hero_digesto .hero_digesto_container .hero_paragraph {
   color: rgb(255, 255, 255);
@@ -2392,8 +2386,8 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     width: 100%;
-    min-height: 480px;
-    max-height: 580px;
+    min-height: 100px;
+    max-height: 300px;
     position: relative;
     display: grid;
     grid-template-rows: 1fr;
@@ -2402,6 +2396,7 @@ body {
   .hero_digesto .nav {
     height: 100%;
     align-items: center;
+    margin-top: 30px;
   }
   .hero_digesto .nav .container {
     width: 90%;
@@ -2467,15 +2462,15 @@ body {
     width: 30px;
   }
   .Formulario {
-    margin-right: 65%;
+    width: 75%;
   }
   .form-register {
-    width: 95%;
-    margin-left: 25%;
-    padding-left: 10px;
+    width: 85%;
+    margin-left: 0%;
+    padding-left: 0px;
     padding-bottom: 10px;
     max-width: 700px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 30px;
     background: linear-gradient(#141e30, #243b55);
     box-sizing: border-box;
@@ -2484,7 +2479,7 @@ body {
   }
   .form-register .form--title {
     margin-top: 0;
-    font-size: 2.5em;
+    font-size: 1.1em;
     text-align: center;
     color: #fff;
   }
@@ -2600,6 +2595,7 @@ body {
   .hero_digesto {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%;
     min-height: 280px;
     max-height: 580px;
@@ -2611,6 +2607,7 @@ body {
   .hero_digesto .nav_menu {
     display: block;
     color: #fff;
+    margin-top: 0px;
   }
   .hero_digesto .nav_menu .nav_img {
     display: block;
@@ -2650,13 +2647,6 @@ body {
   .hero_digesto .nav_close {
     display: var(--show, none);
   }
-  .hero_title {
-    font-size: 5px;
-  }
-  .hero_paragraph {
-    font-size: 10px;
-    padding: 0%;
-  }
   .Formulario {
     margin-right: 65%;
   }
@@ -2676,7 +2666,7 @@ body {
   }
   .form-register .form--title {
     margin-top: 0;
-    font-size: 1.1em;
+    font-size: 10px;
     text-align: center;
     color: #fff;
   }

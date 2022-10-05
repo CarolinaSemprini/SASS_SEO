@@ -31,5 +31,13 @@
     "readdirp": "^3.6.0",
     "to-regex-range": "^5.0.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolinaSemprini/SASS_SEO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CarolinaSemprini/SASS_SEO/issues"
+  },
+  "homepage": "https://github.com/CarolinaSemprini/SASS_SEO#readme",
   "description": ""
 }

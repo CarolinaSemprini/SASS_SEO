@@ -3,15 +3,18 @@
     max-width: 100%;
     overflow-x: hidden;
     width: 100%;
-    min-height: 480px;
-    max-height: 580px;
+
+    min-height: 100px;
+    max-height: 300px;
     position: relative;
     display: grid;
     grid-template-rows: 1fr;
     color: rgb(255, 255, 255);
+
     .nav {
       height: 100%;
       align-items: center;
+      margin-top: 30px;
 
       .container {
         width: 90%;
@@ -84,16 +87,17 @@
       }
     }
   }
+
   .Formulario {
-    margin-right: 65%;
+    width: 75%;
   }
   .form-register {
-    width: 95%;
-    margin-left: 25%;
-    padding-left: 10px;
+    width: 85%;
+    margin-left: 0%;
+    padding-left: 0px;
     padding-bottom: 10px;
     max-width: 700px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 30px;
     background: $color_formulario;
     box-sizing: border-box;
@@ -102,7 +106,7 @@
 
     .form--title {
       margin-top: 0;
-      font-size: 2.5em;
+      font-size: 1.1em;
       text-align: center;
       color: #fff;
     }
@@ -226,6 +230,7 @@
   .hero_digesto {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%;
     min-height: 280px;
     max-height: 580px;
@@ -237,6 +242,7 @@
     .nav_menu {
       display: block;
       color: #fff;
+      margin-top: 0px;
 
       .nav_img {
         display: block;
@@ -281,14 +287,6 @@
     }
   }
 
-  .hero_title {
-    font-size: 5px;
-  }
-  .hero_paragraph {
-    font-size: 10px;
-    padding: 0%;
-  }
-
   .Formulario {
     margin-right: 65%;
   }
@@ -308,7 +306,7 @@
 
     .form--title {
       margin-top: 0;
-      font-size: 1.1em;
+      font-size: 10px;
       text-align: center;
       color: #fff;
     }
